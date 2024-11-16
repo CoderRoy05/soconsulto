@@ -3409,13 +3409,15 @@ html {
       width: 600px;
     }
   }
-  @media screen and (max-width: 770px) {
+
+  @media (min-width: 610px) and (max-width: 780px) {
     body{
       width: 1110px;
       text-align: center;
     }
   }
-  @media screen and (max-width: 1200px) {
+
+  @media (min-width: 790px) and (max-width: 1210px) {
     body{
       width: 1300px;
     }
