@@ -3403,7 +3403,24 @@ html {
     position: fixed;
     inset: 0% 0% auto;
   }
-  
+
+  @media screen and (max-width: 600px) {
+    body{
+      width: 600px;
+    }
+  }
+  @media screen and (max-width: 770px) {
+    body{
+      width: 1110px;
+      text-align: center;
+    }
+  }
+  @media screen and (max-width: 1200px) {
+    body{
+      width: 1300px;
+    }
+  }
+
   .navbar-no-shadow-container {
     z-index: 5;
     background-color: #0000;
