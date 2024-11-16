@@ -3,6 +3,41 @@ html {
     -ms-text-size-adjust: 100%;
     font-family: sans-serif;
   }
+
+  /* General Fix for Body Overflow */
+html, body {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden; /* Prevents horizontal scroll */
+}
+
+/* Contain Overflows in All Elements */
+* {
+  box-sizing: border-box; /* Includes padding and border in element size */
+}
+
+/* Prevent Elements from Exceeding Screen Width */
+body {
+  max-width: 100vw; /* Prevents body from exceeding the viewport width */
+}
+
+/* Fix for Specific Overflow Issues */
+.container, .main-wrapper, .content-wrapper { /* Replace with your classes */
+  overflow-x: hidden; /* Ensures child elements don't overflow */
+  max-width: 100%; /* Prevents content from stretching */
+}
+
+/* Wrap Long Texts or Overflowing Content */
+p, span, div {
+  word-wrap: break-word; /* Break long words */
+  overflow-wrap: break-word;
+}
+
+/* Remove Unwanted Horizontal Scroll (Optional Fallback) */
+::-webkit-scrollbar {
+  display: none; /* Hides scrollbars for modern browsers */
+}
+
   
   body {
     margin: 0;
@@ -3406,9 +3441,9 @@ html {
 
   @media screen and (max-width:590px) {
     body{
-      /* width: 530px; */
+      /* width: 330px; */
       font-size: 5px;
-      margin-right: -230px !important;
+      /* margin-right: -730px !important; */
     }
   }
 
@@ -3416,18 +3451,15 @@ html {
     body{
       /* width: 1110px; */
       text-align: center;
-      margin-right: -350px !important;
+      /* margin-right: -350px !important; */
 
     }
   }
 
-  @media (min-width: 790px) and (max-width: 1210px) {
+  /* @media (min-width: 790px) and (max-width: 1210px) {
     body{
-      /* width: 1300px; */
-      margin-right: -390px !important;
-
     }
-  }
+  } */
 
   .navbar-no-shadow-container {
     z-index: 5;
