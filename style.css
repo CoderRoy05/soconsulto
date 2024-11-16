@@ -3404,9 +3404,9 @@ html {
     inset: 0% 0% auto;
   }
 
-  @media screen and (max-width: 600px) {
+  @media screen and (max-width:590px) {
     body{
-      width: 600px;
+      width: 520px;
     }
   }
 
